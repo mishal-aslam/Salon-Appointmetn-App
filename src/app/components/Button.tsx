@@ -18,8 +18,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   const baseClasses = "px-5 py-3 rounded font-semibold focus:outline-none";
   const typeClasses = {
-    primary:
-      "bg-primary text-secondary border border-secondary hover:bg-danger rounded-full ",
+    primary: "bg-transparent flex text-secondary border border-secondary hover:bg-danger rounded-full ",
     secondary: "bg-secondary text-primary hover:bg-secondaryDark rounded-full ",
   };
 

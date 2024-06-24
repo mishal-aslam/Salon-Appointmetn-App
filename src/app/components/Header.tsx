@@ -1,4 +1,4 @@
-// "use client"
+"use client"
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import Button from "@/app/components/Button";
@@ -47,7 +47,7 @@ const Header = () => {
             }`}
             id="mobile-menu-2"
           >
-            <ul className="flex flex-col mt-12  font-medium lg:flex-row lg:space-x-20 lg:mt-0">
+            <ul className="flex flex-col mt-8  font-medium lg:flex-row lg:space-x-20 lg:mt-0  md:bg-transparent w-full bg-primary rounded-lg  z-10">
               <li>
                 <a
                   href="/"
