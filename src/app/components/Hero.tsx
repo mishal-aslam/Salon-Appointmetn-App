@@ -3,6 +3,7 @@ import Image from "next/image";
 import HeroImg from '../../../public/hero.png'
 import Button from '@/app/components/Button'
 import { BsArrowUpRightCircleFill } from "react-icons/bs";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -16,9 +17,12 @@ const Hero = () => {
       <p className="text-secondary lg:text-xl mb-8 font-medium">
         "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id recusandae beatae, voluptate eum quas laudantium aspernatur,  eos, nisi ex porro mollitia incidunt quam velit blanditiis natus illo non esse eius aliquam sit nemo."
       </p>
+      <Link href="/sign-up">
       <Button type="primary" onClick={() => alert('Primary Button Clicked')}>
-      Sign Up <BsArrowUpRightCircleFill className="bg-primary text-secondary rounded-full w-6 h-6  ml-2" />
+      Sign Up <BsArrowUpRightCircleFill className="bg-primary text-secondary rounded-full w-6 h-6  ml-2"
+       />
     </Button>
+    </Link>
     </div>
 
 

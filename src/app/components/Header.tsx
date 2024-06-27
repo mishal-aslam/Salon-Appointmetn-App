@@ -1,7 +1,9 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import Button from "@/app/components/Button";
+import Link from "next/link";
+import { UserButton,   SignedIn } from "@clerk/nextjs";
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -20,13 +22,15 @@ const Header = () => {
           >
             Glow Scout
           </a>
-          <div className="flex items-center lg:order-2">
-            <Button
-              type="secondary"
-              onClick={() => alert("Primary Button Clicked")}
-            >
-              Sign In/Up
-            </Button>
+          <div className="flex items-center lg:order-2 ">
+            <Link href="/sign-up">
+              <Button type="secondary" className="flex gap-x-3 items-center">
+                Sign In/Up
+                <SignedIn>
+                  <UserButton />
+                </SignedIn>
+              </Button>
+            </Link>
             <button
               onClick={toggleMobileMenu}
               className="inline-flex items-center p-2 ml-1 text-sm text-secondary rounded-lg lg:hidden  focus:outline-none "
@@ -67,7 +71,7 @@ const Header = () => {
               </li>
               <li>
                 <a
-                    href="/components/pages/Spas"
+                  href="/components/pages/Spas"
                   className="block py-2 pr-4 pl-3 text-secondary text-xl rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0 "
                 >
                   Spas
