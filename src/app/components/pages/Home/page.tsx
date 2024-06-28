@@ -4,6 +4,7 @@ import Hero from "../../Hero";
 import Works from "../../Works";
 import TrendingTreat from "../../TrendingTreat";
 import Testimonials from "../../Testimonials";
+import Newsletter from '../../Neslatter'
 
 const page = () => {
   return (
@@ -12,6 +13,7 @@ const page = () => {
     <Works />
     <TrendingTreat />
     <Testimonials />
+    <Newsletter />
   </div>
   )
 }

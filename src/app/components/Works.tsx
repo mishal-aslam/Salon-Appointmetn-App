@@ -3,10 +3,10 @@ import Button from '@/app/components/Button'
 
 const Works = () => {
   const worksData = [
-    { id: 1, title: "Lorem, ipsum.", number: "o1" },
-    { id: 2, title: "Lorem, ipsum.", number: "o2" },
-    { id: 3, title: "Lorem, ipsum.", number: "o3" },
-    { id: 4, title: "Lorem, ipsum.", number: "o4" }
+    { id: 1, title: "Sign Up", number: "o1" },
+    { id: 2, title: "Select your Beauty Goals", number: "o2" },
+    { id: 3, title: "Select Treatmenet", number: "o3" },
+    { id: 4, title: "Select Spa", number: "o4" }
   ];
 
   return (
@@ -31,7 +31,7 @@ const Works = () => {
       </div>
       <div className="flex place-content-center mt-16">
       <Button type="primary" onClick={() => alert('Primary Button Clicked')}>
-      Primary Button
+      Get Started
     </Button>
       </div>
     </div>
