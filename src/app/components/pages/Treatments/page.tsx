@@ -1,6 +1,11 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
+import Img1 from '../../../../../public/image 1.jpg'
+import Img2 from "../../../../../public/image2.jpg";
+import Img3 from "../../../../../public/image3..jpg";
+import Img4 from "../../../../../public/image4.jpg";
+import Img5 from "../../../../../public/image5.jpg";
 import Button from "@/app/components/Button";
 
 interface Item {
@@ -9,50 +14,65 @@ interface Item {
   title: string;
   text: string;
   category: string;
-}
+  para: string;
+};
 
 const items: Item[] = [
   {
     id: 1,
-    image: "/image 1.jpg",
-    title: "Item 1",
-    text: "Lorem ipsum dolor sit amet.",
-    category: "Category 1",
+    image: Img1.src,
+    title: "Laser Resurfacing",
+    para: "loreem epum",
+    text: "Lorem ipsum dolor sit.",
+    category: "Skin Rejuvenation"
   },
   {
     id: 2,
-    image: "/image 1.jpg",
-    title: "Item 2",
-    text: "Lorem ipsum dolor sit amet.",
-    category: "Category 2",
+    image: Img2.src,
+    title: "Chemical Peels",
+    para: "loreem epum",
+    text: "Lorem ipsum dolor sit.",
+    category: "Skin Rejuvenation"
   },
   {
     id: 3,
-    image: "/image 1.jpg",
-    title: "Item 3",
-    text: "Lorem ipsum dolor sit amet.",
-    category: "Category 1",
+    image: Img3.src,
+    title: "Acne Bluelight Therapy",
+    para: "loreem epum",
+    text: "Lorem ipsum dolor sit.",
+    category: "Acne Treatment"
   },
   {
     id: 4,
-    image: "/image 1.jpg",
-    title: "Item 4",
-    text: "Lorem ipsum dolor sit amet.",
-    category: "Category 2",
+    image: Img4.src,
+    title: "Thermage",
+    para: "loreem epum",
+    text: "Lorem ipsum dolor sit.",
+    category: "Skin Tightening"
   },
   {
     id: 5,
-    image: "/image 1.jpg",
-    title: "Item 5",
-    text: "Lorem ipsum dolor sit amet.",
-    category: "Category 2",
+    image: Img5.src,
+    title: "Botox",
+    para: "loreem epum",
+    text: "Lorem ipsum dolor sit.",
+    category: "Wrinkle Relaxers"
   },
   {
     id: 6,
-    image: "/image 1.jpg",
-    title: "Item 6",
-    text: "Lorem ipsum dolor sit amet.",
-    category: "Category 2",
+    image: Img2.src,
+    title: "Acne Bluelight Therapy",
+    para: "loreem epum",
+    text: "Lorem ipsum dolor sit.",
+    category: "Acne Treatment"
+  },
+  {
+    id: 7,
+    image: Img1.src,
+    title: "Acne Bluelight Therapy",
+    para: "loreem epum",
+    text: "Lorem ipsum dolor sit.",
+    category: "Acne Treatment"
   },
 ];
 
@@ -84,7 +104,7 @@ const Page = () => {
   };
 
   return (
-    <div>
+    <div className="max-w-screen-2xl mx-auto">
       <h1 className="text-secondary font-medium text-4xl my-10 text-center mb-6">
         Treatments
       </h1>
@@ -156,10 +176,10 @@ const Page = () => {
                       className="rounded-3xl md:w-[300px] w-full h-[220px] md:h-[300px]"
                     />
                     <div className="absolute -top-2 -right-2 mt-2 mr-2 bg-primary px-8 py-3 rounded-bl-3xl rounded-tr-3xl text-secondary font-bold">
-                      {item.title}
+                      {item.para}
                     </div>
                   </div>
-                  <h2 className="text-secondary font-bold text-3xl mt-4 text-start">
+                  <h2 className="text-secondary font-bold text-xl mt-4 text-start">
                     {item.title}
                   </h2>
                   <p className="text-secondary text-lg lg:text-md mt-2 text-start">

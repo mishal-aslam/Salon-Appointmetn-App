@@ -13,8 +13,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-
-// Define a type for the item object
+  
 type Item = {
   id: number;
   image: string;

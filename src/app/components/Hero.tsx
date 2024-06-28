@@ -31,7 +31,7 @@ const Hero = () => {
         {/* fade color  */}
       <div className="absolute -top-16 right-0 bg-gradient-to-l from-primary via-primary to-transparent  w-full h-full "></div>
       {/* Oval shape */}
-      <div className="absolute top-0 md:left-36 left-16 bg-transparent md:w-1/2  w-1/3 xl:h-3/4 lg:h-1/3 md:h-1/6 h-1/4 border-2 border-black rounded-full"></div>
+      <div className="absolute top-0 md:left-28 left-16 bg-transparent md:w-1/2  w-1/3 xl:h-[60%] lg:h-[40%] md:h-[30%] h-1/4 border-2 border-black rounded-full"></div>
 
       
       {/* Image */}

@@ -19,7 +19,7 @@ const Neslatter = () => {
             </p>
             <form action="#">
               <div className="items-center mx-auto mb-3 space-y-2 max-w-screen-sm sm:flex sm:space-y-0 justify-center place-content-center ">
-                <Link href="/sign-up">
+                <Link href="/">
                   <Button
                     type="primary"
                     onClick={() => alert("Primary Button Clicked")}

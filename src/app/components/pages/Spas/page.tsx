@@ -10,57 +10,155 @@ interface Item {
   text: string;
   category: string;
   location: string;
+  para: string;
 }
+
 const items: Item[] = [
   {
     id: 1,
     image: "/image 1.jpg",
-    title: "Item 1",
+    title: "Hunza Serenity",
     text: "Lorem ipsum dolor sit amet.",
-    category: "Category 1",
-    location: "Location 1",
+    category: "Hotel",
+    location: "mirpur, Pakistan",
+    para: "lorem epsum"
   },
   {
     id: 2,
     image: "/image 1.jpg",
-    title: "Item 2",
+    title: "Lahore Luxury",
     text: "Lorem ipsum dolor sit amet.",
-    category: "Category 2",
-    location: "Location 2",
+    category: "Resort",
+    location: "Lahore, Pakistan",
+    para: "lorem epsum"
   },
   {
     id: 3,
     image: "/image 1.jpg",
-    title: "Item 3",
+    title: "Naran Nirvana",
     text: "Lorem ipsum dolor sit amet.",
-    category: "Category 1",
-    location: "Location 3",
+    category: "Lodge",
+    location: "islamabad, Pakistan",
+    para: "lorem epsum"
   },
   {
     id: 4,
     image: "/image 1.jpg",
-    title: "Item 4",
+    title: "Islamabad Oasis",
     text: "Lorem ipsum dolor sit amet.",
-    category: "Category 2",
-    location: "Location 4",
+    category: "Spa",
+    location: "Islamabad, Pakistan",
+    para: "lorem epsum"
   },
   {
     id: 5,
     image: "/image 1.jpg",
-    title: "Item 5",
+    title: "Karachi Getaway",
     text: "Lorem ipsum dolor sit amet.",
-    category: "Category 2",
-    location: "Location 2",
+    category: "Beach Resort",
+    location: "Karachi, Pakistan",
+    para: "lorem epsum"
   },
   {
     id: 6,
     image: "/image 1.jpg",
-    title: "Item 6",
+    title: "Peshawar Paradise",
     text: "Lorem ipsum dolor sit amet.",
-    category: "Category 2",
-    location: "Location 3",
+    category: "Hotel",
+    location: "Peshawar, Pakistan",
+    para: "lorem epsum"
   },
-];
+  {
+    id: 7,
+    image: "/image 1.jpg",
+    title: "Skardu Sanctuary",
+    text: "Lorem ipsum dolor sit amet.",
+    category: "Lodge",
+    location: "multan, Pakistan",
+    para: "lorem epsum"
+  },
+  {
+    id: 8,
+    image: "/image 1.jpg",
+    title: "Quetta Hideaway",
+    text: "Lorem ipsum dolor sit amet.",
+    category: "Camping",
+    location: "islamabad, Pakistan",
+    para: "lorem epsum"
+  },
+  {
+    id: 9,
+    image: "/image 1.jpg",
+    title: "Gilgit Getaway",
+    text: "Lorem ipsum dolor sit amet.",
+    category: "Hotel",
+    location: "multan, Pakistan",
+    para: "lorem epsum"
+  },
+  {
+    id: 10,
+    image: "/image 1.jpg",
+    title: "Muzaffarabad Retreat",
+    text: "Lorem ipsum dolor sit amet.",
+    category: "Resort",
+    location: "lahore, Pakistan",
+    para: "lorem epsum"
+  },
+  {
+    id: 11,
+    image: "/image 1.jpg",
+    title: "Mirpur Haven",
+    text: "Lorem ipsum dolor sit amet.",
+    category: "Lodge",
+    location: "multan, Pakistan",
+    para: "lorem epsum"
+  },
+  {
+    id: 12,
+    image: "/image 1.jpg",
+    title: "Multan Oasis",
+    text: "Lorem ipsum dolor sit amet.",
+    category: "Spa",
+    location: "Multan, Pakistan",
+    para: "lorem epsum"
+  },
+  {
+    id: 13,
+    image: "/image 1.jpg",
+    title: "Pure Tranquility",
+    text: "Lorem ipsum dolor sit amet.",
+    category: "Wellness",
+    location: "karachi",
+    para: "lorem epsum"
+  },
+  {
+    id: 14,
+    image: "/image 1.jpg",
+    title: "Crystal Calm",
+    text: "Lorem ipsum dolor sit amet.",
+    category: "Spa",
+    location: "lahore",
+    para: "lorem epsum"
+  },
+  {
+    id: 15,
+    image: "/image 1.jpg",
+    title: "Radiant serenity",
+    text: "Lorem ipsum dolor sit amet.",
+    category: "Yoga",
+    location: "Peshawar",
+    para: "lorem epsum"
+  },
+  {
+    id: 16,
+    image: "/image 1.jpg",
+    title: "Eternal Bliss",
+    text: "Lorem ipsum dolor sit amet.",
+    category: "Yoga",
+    location: "Karachi",
+    para: "lorem epsum"
+  }
+]
 
 const categories = Array.from(new Set(items.map((item) => item.category)));
 
@@ -172,13 +270,13 @@ const Page = () => {
                     className="rounded-3xl md:w-[300px] w-full h-[220px] md:h-[300px]"
                   />
                   <div className="absolute -top-2 -right-2 mt-2 mr-2 bg-primary px-8 py-3 rounded-bl-3xl rounded-tr-3xl text-secondary font-bold">
-                    {item.title}
+                    {item.para}
                   </div>
                 </div>
-                <h2 className="text-secondary font-bold text-3xl mt-4 text-start">
+                <h2 className="text-secondary font-bold text-2xl mt-4 text-start">
                   {item.title}
                 </h2>
-                <p className="text-secondary text-lg lg:text-md mt-2 text-start">
+                <p className="text-secondary text-base lg:text-base mt-2 text-start">
                   {item.text}
                 </p>
               </div>

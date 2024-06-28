@@ -8,7 +8,7 @@ import Newsletter from '../../Neslatter'
 
 const page = () => {
   return (
-    <div className="bg-bgPrimary">
+    <div className="bg-bgPrimary max-w-[1750px] mx-auto">
     <Hero />
     <Works />
     <TrendingTreat />
