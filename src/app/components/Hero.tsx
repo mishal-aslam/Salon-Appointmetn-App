@@ -15,7 +15,7 @@ const Hero = () => {
       <h1 className="text-secondary text-5xl lg:text-8xl mb-6 font-light">Reveal your <br className="md:block hidden"/> beauty with</h1>
       <a href="/" className="flex items-center text-secondary md:text-8xl text-6xl my-auto font-semibold mb-8">Glow Scout</a>
       <p className="text-secondary lg:text-xl mb-8 font-medium">
-        "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id recusandae beatae, voluptate eum quas laudantium aspernatur,  eos, nisi ex porro mollitia incidunt quam velit blanditiis natus illo non esse eius aliquam sit nemo."
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident assumenda magnam autem nostrum accusamus cupiditate, asperiores repellat voluptates dolorum consectetur.
       </p>
       <Link href="/sign-up">
       <Button type="primary" onClick={() => alert('Primary Button Clicked')}>
