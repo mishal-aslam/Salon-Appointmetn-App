@@ -4,7 +4,7 @@ import Hero from "../../Hero";
 import Works from "../../Works";
 import TrendingTreat from "../../TrendingTreat";
 import Testimonials from "../../Testimonials";
-import Newsletter from '../../Neslatter'
+import Newsletter from '../../Newslatter'
 
 const page = () => {
   return (
